@@ -1,0 +1,56 @@
+:root {
+    --purple-bg: #290742;
+    --dark-bg: #170027;
+    --button-bg: #9e6dc2;
+    --white: #fff;
+    --light-purple: #fbf6ff;
+    --green: #4fff4b;
+}
+  body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+    "espacoLeft espacoLeft home espacoRight espacoRight"
+    "espacoLeft espacoLeft cont espacoRight espacoRight";
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(174, 174, 235);
+    align-items: center;
+  }
+  #mylinks{
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+  }
+  .listMenu{
+      margin: 1vw;
+  }
+  #home{
+      grid-area: home;
+      background: #4fff4b;
+  }
+  #homeCont{
+    display: flex;
+}
+#text{
+   width: 50%;
+}
+#img{
+    flex-grow: 1;
+}
+  #content{
+      grid-area: cont;
+      background: red;
+  }
+  #espacoLeft{
+      grid-area: espacoLeft;
+      background: #9e6dc2;
+      width: 5vw;
+  }
+  #espacoRight{
+    grid-area: espacoRight;
+    background: #9e6dc2;
+    width: 5vw;
+}
