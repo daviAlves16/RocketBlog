@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
     --purple-bg: #290742;
     --dark-bg: #170027;
@@ -10,47 +15,184 @@
     margin: 0;
     display: grid;
     grid-template-areas: 
-    "espacoLeft espacoLeft home espacoRight espacoRight"
-    "espacoLeft espacoLeft cont espacoRight espacoRight";
+    "home"
+    "cont";
+    padding-bottom: 5vw;
   }
   header{
     display: flex;
     justify-content: space-between;
-    background: rgb(174, 174, 235);
     align-items: center;
+    padding-bottom: 3vw;
+    padding-top: 3vw;
+
   }
   #mylinks{
       display: flex;
       justify-content: space-between;
       list-style: none;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      color: var(--white);
   }
   .listMenu{
       margin: 1vw;
+      padding-left: 2px;
+  }
+  .listMenu:hover{
+    font-weight: 700;
+    border-left: 2px solid var(--green);
+}
+  #botao{
+    display: flex;
+  }
+  #txtBusca{
+    height: auto;
+    border: 0px;
+    background: var(--dark-bg);
+    padding-left: 1.5vw;
+    border-radius: 5px 0px 0px 5px;
+    color: white;
+  }
+  ::-webkit-input-placeholder{
+    color: white;
+  }
+  #btnBusca{
+    background: var(--button-bg);
+    border: 0px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+    border-radius: 0px 5px 5px 0px;
   }
   #home{
       grid-area: home;
       background: #4fff4b;
+      padding-left: 10vw;
+      padding-right: 10vw;
+      padding-bottom: 5vw;
+      background: var(--purple-bg);
+      border-bottom: 5px solid var(--green);
   }
   #homeCont{
     display: flex;
 }
 #text{
+  flex-grow: 1;
    width: 50%;
+   padding-right: 8vw;
+}
+.marginText{
+  margin-bottom: 1vw;
+}
+#text h1{
+  font-size: 2.2vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--button-bg);
+}
+#text p{
+  font-size: 1.3vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: var(--light-purple);
+}
+#text label{
+  font-size: 1.3vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: var(--button-bg);
 }
 #img{
     flex-grow: 1;
+    padding-left: 1vw;
 }
-  #content{
-      grid-area: cont;
-      background: red;
-  }
-  #espacoLeft{
-      grid-area: espacoLeft;
-      background: #9e6dc2;
-      width: 5vw;
-  }
-  #espacoRight{
-    grid-area: espacoRight;
-    background: #9e6dc2;
-    width: 5vw;
+#content{
+    grid-area: cont;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vw;
 }
+#post1{
+  display: flex;
+  padding-bottom: 1vw;
+}
+#imgPost1{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  padding-right: 1vw;
+}
+#imgPost1 img{
+  flex-grow: 2;
+}
+#imgPost1 p{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  font-size: 1.1vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding-top: 0px;
+}
+#textPost1{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  padding-left: 8vw;
+}
+#textPost1 p{
+  font-size: 1.1vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+#textPost1 h2{
+  font-size: 1.5vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--purple-bg);
+}
+#textAbaixo{
+  width: 50%;
+  padding-right: 1vw;
+}
+#textAbaixo p{
+  font-size: 1.2vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+#textAbaixo h2{
+  font-size: 1.5vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin-bottom: 1vw;
+  color: var(--dark-bg);
+}
+#postsMenores{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4vw;
+}
+.fontsPostsMenores p{
+  font-size: 1.1vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+.fontsPostsMenores h2{
+  font-size: 1.5vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--purple-bg);
+}
+.espacoPosts{
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+ 
